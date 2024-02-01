@@ -17,6 +17,14 @@ git branch -M main
 
 git remote add origin
 git push -u origin --all
+
+git push --set-upstream origin develop
+git push --set-upstream origin juan
+git push --set-upstream origin joan &&
+git push --set-upstream origin fernando &&
+git push --set-upstream origin nicolas &&
+git push --set-upstream origin bernardo &&
+git push --set-upstream origin cesar
 ```
 
 ## Git Config
@@ -35,5 +43,39 @@ git config --global alias.tags "! git push -u origin --tags"
 git config --global alias.rhs 'reset HEAD^ --soft'
 git config --global alias.rhh 'reset HEAD^ --hard'
 git config --global alias.clean 'git rm -r --cached .'
-
 ```
+
+## Models
+
+List models to created
+
+Juan: formulario
+Atributs:
+-id int
+-name text
+-descripcion text
+
+Luis Fernando: imagenes
+Atributs:
+-id int
+-name: text
+-file: text
+-id_formulario: int
+
+Joan: Faulers
+Atributs:
+-id int
+-code int
+-faules text
+
+Nicolas: FauresAreas
+Atributs:
+-id int
+-id_fauler: int
+-name_area: text
+
+Luis Bernardo: FauresFeedback
+Atributs:
+-id int
+-id_fauler: int
+-feedback text
