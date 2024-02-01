@@ -49,6 +49,7 @@ git config --global alias.clean 'git rm -r --cached .'
 
 List models to created
 
+```
 Juan: formulario
 Atributs:
 -id int
@@ -79,3 +80,10 @@ Atributs:
 -id int
 -id_fauler: int
 -feedback text
+
+Cesar: FaulersClients
+Atributs:
+-id int
+-id_fauler: int
+-client_name: text
+```
