@@ -79,3 +79,9 @@ Atributs:
 -id int
 -id_fauler: int
 -feedback text
+
+Cesar: FaulersClients
+Atributs:
+-id int
+-id_fauler: int
+-client_name: text
