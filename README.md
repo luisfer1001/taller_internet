@@ -43,6 +43,8 @@ git config --global alias.tags "! git push -u origin --tags"
 git config --global alias.rhs 'reset HEAD^ --soft'
 git config --global alias.rhh 'reset HEAD^ --hard'
 git config --global alias.clean 'git rm -r --cached .'
+
+git remote -v
 ```
 
 ## Models
