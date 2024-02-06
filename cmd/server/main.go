@@ -8,6 +8,7 @@ import (
 	"github.com/test/pkg/db"
 	"github.com/test/pkg/res"
 	"github.com/test/pkg/user"
+	"github.com/test/pkg/formulario"
 )
 
 func main() {
@@ -38,7 +39,8 @@ func httpServer() {
 
 func createTables() {
 	err := user.CreateTable()
-	if err != nil {
+	errr := formulario.CreateTable()
+	if err != nil || errr != nil {
 		log.Println(err.Error())
 	}
 }

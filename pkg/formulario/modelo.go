@@ -12,7 +12,7 @@ func CreateTable() error {
 		CREATE TABLE IF NOT EXISTS formulario (
 			id INTEGER PRIMARY KEY AUTOINCREMENT,
 			name TEXT,
-			description TEXT,
+			description TEXT
 		);`
 
 	_, err := db.DB.Exec(sql)
