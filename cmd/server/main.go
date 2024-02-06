@@ -29,7 +29,7 @@ func httpServer() {
 	})
 
 	user.NewRouter(r)
-
+	formulario.NewRouter(r)
 	log.Println("Server running on port 3000")
 	err := http.ListenAndServe(":3000", r)
 	if err != nil {
