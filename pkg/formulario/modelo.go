@@ -79,7 +79,7 @@ func Updateformulario(id int, name, descripcion string) error {
 	sql := `
 		UPDATE formulario SET
 		name = ?,
-		description = ?,
+		description = ?
 		WHERE id = ?;`
 
 	_, err := db.DB.Exec(sql, name, descripcion, id)
