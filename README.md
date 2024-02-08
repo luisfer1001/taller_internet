@@ -56,7 +56,7 @@ Juan: formulario
 Atributs:
 -id int
 -name text
--descripcion text
+-descripcion text (Listo)
 
 Luis Fernando: imagenes
 Atributs:
