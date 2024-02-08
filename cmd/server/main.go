@@ -6,9 +6,10 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/test/pkg/db"
+	"github.com/test/pkg/formulario"
+	"github.com/test/pkg/imagenes"
 	"github.com/test/pkg/res"
 	"github.com/test/pkg/user"
-	"github.com/test/pkg/formulario"
 )
 
 func main() {
@@ -30,6 +31,7 @@ func httpServer() {
 
 	user.NewRouter(r)
 	formulario.NewRouter(r)
+	imagenes.NewRouter(r)
 	log.Println("Server running on port 3000")
 	err := http.ListenAndServe(":3000", r)
 	if err != nil {
@@ -39,8 +41,16 @@ func httpServer() {
 
 func createTables() {
 	err := user.CreateTable()
-	errr := formulario.CreateTable()
-	if err != nil || errr != nil {
+	if err != nil {
 		log.Println(err.Error())
 	}
+	err = formulario.CreateTable()
+	if err != nil {
+		log.Println(err.Error())
+	}
+	err = imagenes.CreateTable()
+	if err != nil {
+		log.Println(err.Error())
+	}
+
 }
