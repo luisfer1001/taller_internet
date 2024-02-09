@@ -89,3 +89,37 @@ Atributs:
 -id_fauler: int
 -client_name: text
 ```
+
+## Git
+
+```
+git push --set-upstream origin
+
+git add .;
+git commit -m 'Review';
+git push -u origin $1;
+
+git push -u ofigin --force;
+```
+
+## Merge
+
+```
+git rhs #Reset commit and preserve changes
+git rhh #Reset commit and discard changes
+
+git reset HEAD^ --hard
+git reset HEAD^ --soft
+
+git reset <id> --hard
+git reset <id> --soft
+
+git branch -v #Listar ramas
+
+git merge <rama>
+git merge -X theirs <rama>
+git rebase origin/<rama>
+git checkout origin/<rama> -- <filename>
+
+git checkout origin/nicolas -- pkg/fauresAreas/controlador.go
+```
