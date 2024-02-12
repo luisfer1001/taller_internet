@@ -122,5 +122,4 @@ git rebase origin/<rama>
 git checkout origin/<rama> -- <filename>
 
 git checkout origin/nicolas -- pkg/fauresAreas/controlador.go
-
 ```
