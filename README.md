@@ -1,4 +1,4 @@
-## Create project with go
+## Create project with go - TALLER INTERNET
 
 ```
 go mod init github.com/test
